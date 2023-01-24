@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEP Airlines</title>
+
+    <link rel="stylesheet" href="../css/home/home.css">
+    <link rel="stylesheet" href="../css/site.css">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+
+    <link rel="stylesheet" href="../jquery-ui-1.12.1.custom/jquery-ui.css">
+</head>
+<body>
+    <nav>
+        <div class="logo-wrapper">
+            <a href="../HomePage/index.html"><img id="logo" src="../banner-logo/airplane_logo.jpg" alt="Logo"></a>
+        </div>
+        <ul>
+            <!-- <li><a href="../HomePage/index.html"><img id="logo" src="../banner-logo/airplane_logo.jpg" alt="Logo"></a></li> -->
+            <li><a href="../HomePage/index.html">HOME</a></li>
+            <li><a href="../Contact/contact.html">CONTACT</a></li>
+            <li><a href="../Login/login.html">LOG IN / SIGN UP</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <img src="../banner-logo/banner12.png" alt="banner image" class="banner-image" >
+        <!-- <div id="banner"></div> -->
+    </header>
+
+    <main>
+        <div class="flight">
+            <div id="tabs" role="tabpanel">
+                <ul id="tab-header"role="tablist">
+                  <li><a href="#tabs-1"><span><img src="../icons/plane.png" alt="icon image" class="icon-image" ></span>Search Flights</a></li>
+                  <li><a href="#tabs-2"><span><img src="../icons/seat.png" alt="icon image" class="icon-image" ></span>Online Check-in</a></li>
+                  <li><a href="#tabs-3"><span><img src="../icons/airplane-ticket.png" alt="icon image" class="icon-image" ></span>Manage My Booking</a></li>
+                </ul>
+                <div id="tabs-1">
+                    <div id="booking-body">
+                        <form action="" method="post" name="booking_form" id="booking_form">
+                      
+                        <div class="row">
+                            <div class="col-sm-2">
+                                <input type="radio" name="return_oneway" id="return" class="form_input left" checked>Return&nbsp;&nbsp;&nbsp;
+                            </div>
+                            <div class="col-sm-2">
+                                <input type="radio" name="return_oneway" id="one_way" class="form_input left last">One Way<br>
+                            </div>
+                        </div>
+
+                               
+
+                        <div class="row">
+                            <!-- FROM -->
+                              <div class="form-group col-md-6">
+                                <label for="departure">Departure</label>
+                                <select class="form-control col-md-6" id="departure" required>
+                                  <option>--Select--</option>
+                                  <option>Toronto Pearson Airport</option>
+                                  <option>Istanbul Airport</option>
+                                  <option>Ahmedabad Airport</option>
+                                </select>
+                              </div>
+
+                              <!-- TO -->
+                            <div class="form-group col-md-6">
+                              <label for="arrival">To</label>
+                              <select class="form-control col-md-6" id="arrival">
+                                <option>--Select--</option>
+                                <option>Toronto Pearson Airport</option>
+                                <option>Istanbul Airport</option>
+                                <option>Ahmedabad Airport</option>
+                              </select>
+                            </div>
+                            
+                        </div>
+                           
+                            
+                        <div class="row">
+                            <!-- DEPARTURE DATE -->
+                            <div class="form-group col-md-4">
+                                <label for="departure">Departure Date</label>
+                                <input class="form-control" type="date" id="departure">
+                            </div>
+                            
+
+                            <!-- RETURN DATE -->
+                            <div class="form-group col-md-4">
+                                <label for="arrival">Return Date</label>
+                                <input class="form-control" type="date" id="arrival">
+                            </div>
+
+                             <!-- PASSENGERS -->
+                             <div class="form-group col-md-4">
+                                <label for="passengers">Passengers</label>
+                                <select class="form-control col-md-6" id="passengers">
+                                  <option>--Select--</option>
+                                  <option>1</option>
+                                  <option>2</option>
+                                  <option>3</option>
+                                  <option>4</option>
+                                  <option>5</option>
+                                </select>
+                              </div> 
+                            </div> 
+                        
+
+
+                            <!-- SUBMIT BUTTON -->
+                            <!-- <input type="submit" id="submit" value="Search Flights"><br> -->
+                        <div class="row btn-wrapper">
+                            <button type="button" class="btn buy-now-btn" id="submit_form">Search Flights</button> 
+                        </div> 
+
+                        </form>
+                    </div>
+                </div>
+                <div id="tabs-2">
+                    <div class="row">
+                        <!-- SURNAME -->
+                        <div class="form-group col-md-5">
+                            <label for="surname">Surname</label>
+                            <input class="form-control" type="text" id="surname">
+                        </div>
+                        
+
+                        <!-- RESERVATION PNR NUMBER -->
+                        <div class="form-group col-md-5">
+                            <label for="pnr">Reservation (PNR) Number</label>
+                            <input class="form-control" type="text" id="pnr">
+                        </div>
+
+                        <div class="col-md-2">
+                            <button class="btn buy-now-btn btn-continue" id="continue">Continue</button> 
+                        </div>
+                    </div>
+                </div>
+                <div id="tabs-3">
+                    <div class="row">
+                         <h4>Manage My Booking</h4>
+                         <p>You can process the flight by filling in the following information.</p>
+                         
+                    </div>
+                    <div class="row">
+                        <!-- SURNAME -->
+                        <div class="form-group col-md-5">
+                            <label for="surname">Surname</label>
+                            <input class="form-control" type="text" id="surname">
+                        </div>
+                       
+                        <div class="form-group col-md-5">
+                            <label for="pnr">Reservation (PNR) Number</label>
+                            <input class="form-control" type="text" id="pnr">
+                        </div>
+
+                        <div class="col-md-2">
+                            <button class="btn buy-now-btn btn-continue" id="btn-next">Next</button> 
+                        </div>
+                    </div>
+                </div>
+              </div>
+        </div>
+        <div class="wrapper">
+            <div class="row">
+            </div>
+        </div>
+
+        <div class="bestseller">
+            <h2>Compare Cheap Flight Tickets and Buy Flight Ticket</h2>
+            <div class="multicol">
+                <section class="item">
+                    <img src="../img/Home/campaigns1.webp" alt="Campaigns image 1">
+                    <h4><b>Calendar/Chart View</b></h4>
+                    <p>If your travel date is flexible, easily find the cheapest flight ticket using...</p>
+                    <div class="btn-wrapper">
+                        <a class="fadeandscale_open buy-now-btn btn" onclick="fill_popup_info(1)">Learn More</a>
+                    </div>
+                </section>
+                <section class="item">
+                    <img src="../img/Home/campaigns2.webp" alt="Campaigns image 2">
+                    <h4><b>Don't Miss These Offers!</b></h4>
+                    <p>By keeping an eye on the special deals offered throughout the year...</p>
+                    <div class="btn-wrapper">
+                        <a class="fadeandscale_open buy-now-btn btn" onclick="fill_popup_info(2)">Learn More</a>
+                    </div>
+                </section>
+                <section class="item">
+                    <img src="../img/Home/campaigns3.webp" alt="Campaigns image 3">
+                    <h4><b>Mobile App</b></h4>
+                    <p>Dowload our mobile app free of charge, and you can buy flight tickets...</p>
+                    <div class="btn-wrapper">
+                        <a class="fadeandscale_open buy-now-btn btn" onclick="fill_popup_info(3)">Learn More</a>
+                    </div>
+                </section>
+                <section class="item">
+                    <img src="../img/Home/campaigns4.webp" alt="Campaigns image 4">
+                    <h4><b>Fly with Points</b></h4>
+                    <p>As a member, you'll earn points from flights and from our partners...</p>
+                    <div class="btn-wrapper">
+                        <a class="fadeandscale_open buy-now-btn btn" onclick="fill_popup_info(4)">Learn More</a>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+  </div>
+
+        <!-- FAQ - JQuery Plugin -->
+        <h2>FAQ</h2>
+        <div id="accordion">
+            <h3>How do I purchase a cheap flight ticket?</h3>
+            <div>
+                <p> Buying cheap flight tickets is really simple. Just enter the destination you're travelling to website or on the  to list available flights, then choose the cheapest flight on the date that suits you.
+                </p>
+            </div>
+            <h3>How do I find cheap flights?</h3>
+            <div>
+                <p>If your travel dates are flexible and you want to find the cheapest ticket, follow these steps:</p>
+                <ul>
+                    <li>Don't leave reservations to the last minute.</li>
+                    <li>Try to book your reservations as early as possible.</li>
+                    <li>If you're not sure about your travel dates, fix the price of cheap flight tickets you've found.</li>
+                    <li>Keep an eye on seasonal introductory offers.</li>
+                    <li>Try not to travel at weekends and during public holidays.</li>
+                    <li>Travel outside of peak season.</li>
+                    </ul>
+            </div>
+            <h3>How to reserve plane tickets online?</h3>
+            <div>
+                <p>
+                    Then, create a list of available flights by entering your points of departure and arrival, and your travel dates. Select your flight, make any additional selections and enter your information. Then you can reserve your ticket securely.
+                </p>
+            </div>
+        </div>
+    </main>
+
+    
+    <footer>
+        <div class="item">
+            <h2>Contact Us</h2>
+            <ul>
+                <li><a href="mailto:info@bepairlines.com">info@bepairlines.com</a></li>
+                <li><a href="tel:+1(548)1112233">+1 (905) 111-2233</a></li>
+            </ul>   
+        </div>
+
+        <p class="copyright">Copyright &copy BEP Airlines</p>
+    </footer>
+
+    <!-- POP-UP -->
+     <div id="campaign1_detail" class="well">
+            <img src="../img/Home/campaigns1.webp" class="img_popup" alt="Campaigns pop-up image 1">
+            <h4 class="popup_title">Fly with Points</h4>
+            <p>If your travel date is flexible, easily find the cheapest flight ticket using the calendar/graphical view. Make your decision faster on a single screen.</p>
+            <p>You can earn hundreds of points by using cards,or by spending at the store or using our program partners.</p>
+    </div>
+
+    <div id="campaign2_detail" class="well">
+            <img src="../img/Home/campaigns2.webp" class="img_popup" alt="Campaigns pop-up image 2">
+            <h4 class="popup_title">Fly with Points</h4>
+            <p>By keeping an eye on the special deals offered throughout the year, you can buy cheap tickets, earn more or take advantage of my other services.</p>
+            <p>You can earn hundreds of points by using cards,or by spending at the store or using our program partners.</p>
+    </div>
+
+    <div id="campaign3_detail" class="well">
+            <img src="../img/Home/campaigns3.webp" class="img_popup" alt="Campaigns pop-up image 3">
+            <h4 class="popup_title">Fly with Points</h4>
+            <p>Dowload our mobile app free of charge, and you can buy flight tickets at any time and easily manage all the steps of your journey from a single screen.</p>
+            <p>You can earn hundreds of points by using cards,or by spending at the store or using our program partners.</p>
+    </div>
+
+    <div id="campaign4_detail" class="well">
+            <img src="../img/Home/campaigns4.webp" class="img_popup" alt="Campaigns pop-up image 4">
+            <h4 class="popup_title">Fly with Points</h4>
+            <p>As a member, you'll earn points from flights and from our partners. With enough point,your next flight ticket could be free.</p>
+            <p>You can earn hundreds of points by using cards,or by spending at the store or using our program partners.</p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="../jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+    <script src="../js/home/home.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/vast-engineering/jquery-popup-overlay@2/jquery.popupoverlay.min.js"></script>
+</body>
+</html>

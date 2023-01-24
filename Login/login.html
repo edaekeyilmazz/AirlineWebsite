@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BEP Airlines</title>
+        <link rel="stylesheet" href="../css/login/login.css">
+        <link rel="stylesheet" href="../css/site.css">
+        <link rel="stylesheet" href="../jquery-ui-1.12.1.custom/jquery-ui.css">
+    </head>
+    <body>
+        <nav>
+            <div class="logo-wrapper">
+                <a href="../HomePage/index.html"><img id="logo" src="../banner-logo/airplane_logo.jpg" alt="Logo"></a>
+            </div>
+            <ul>
+                <!-- <li><a href="../HomePage/index.html"><img id="logo" src="../banner-logo/airplane_logo.jpg" alt="Logo"></a></li> -->
+                <li><a href="../HomePage/index.html">HOME</a></li>
+                <li><a href="../Contact/contact.html">CONTACT</a></li>
+                <li><a href="../Login/login.html">LOG IN / SIGN UP</a></li>
+            </ul>
+        </nav>
+    
+        <header>
+            <!-- <img src="../banner-logo/banner12.png" alt="banner image" class="banner-image" > -->
+            <!-- <div id="banner"></div> -->
+        </header>
+        <main> 
+
+            <div class="row">
+                <!-- <div class="container col-sm-2"> -->
+                    <img src="../banner-logo/airplane_banner1.png" alt="login image" class="login-img">
+            <!-- </div> -->
+    
+            <div class="container col-md-2"></div>
+            <div class="container col-md-4" id="login">
+                <!-- <div class="container p-3 card border-0 shadow"> -->
+                <h1>Login</h1>
+                <form action="" method="post" >
+                    <!-- <p class="text-danger" id="check_message"></p> -->
+                    <div class="form-group mb-3">
+                        <label for="username"><i class="fas fa-user"></i>
+                        </label>
+                        <input type="text" name="username" placeholder="Username" id="login_username">
+                        <span></span>
+                    </div>
+    
+                    <div class="form-group mb-3">
+                        <label for="password">
+                            <i class="fas fa-lock"></i>
+                        </label>
+                        <input type="password" name="password" placeholder="Password" id="login_password">
+                        <span></span>    
+                    </div>
+                         <input type="submit" class="signup_button_switch" value="Login" id="login_button">
+                </form>
+                <span id="signup_button_switch">Not a registered user? Sign up</span>
+                <!-- <button id="send" class="btn">Send <i class="fa fa-paper-plane"></i></button> -->
+            </div>
+
+
+            
+            <div class="container col-md-2"></div>
+                <div class="container col-md-4" id="Signup">
+                <!-- <div class="container p-3 card border-0 shadow"> -->
+                <h1>Sign Up</h1>
+                <form action="" method="post">
+
+                    <div class="form-group mb-3">
+                        <label for="email"><i class="fas fa-user"></i></label>
+                        <input type="text" name="email" placeholder="Email" id="email">
+                        <span></span>    
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label for="username"><i class="fas fa-user"></i></label>
+                        <input type="text" name="username" placeholder="Username" id="signup_username">
+                        <span></span>    
+                    </div>
+    
+                    <div class="form-group mb-3">
+                        <label for="password"><i class="fas fa-lock"></i></label>
+                        <input type="password" name="password" placeholder="Password" id="signup_password">
+                        <span></span>    
+                    </div>
+                    <input type="submit" value="Signup" id="signup_button" class="signup_button">
+    
+                </form>
+                <span id="login_button_switch">Already a User? Login</span>
+                <!-- <input type="submit" value="Login" id="login_button"> -->
+                <!-- <button id="send" class="btn">Send <i class="fa fa-paper-plane"></i></button> -->
+            </div>
+        </div>
+
+        </main>
+
+        <footer>
+            <div class="item">
+                <h2>Contact Us</h2>
+                <ul>
+                    <li><a href="mailto:info@bepairplines.com">info@bepairlines.com</a></li>
+                    <li><a href="tel:+1(548)3338441">+1 (905) 782-9867</a></li>
+                </ul>   
+            </div>
+            <p class="copyright">Copyright &copy BEP Airlines</p>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="../js/login/login.js"></script>
+        <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+        <script src="../jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+    </body>
+</html>

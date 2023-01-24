@@ -1,0 +1,510 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: workSans-regular;
+}
+
+@font-face {
+    font-family: workSans-bold;
+    src: url("../../fonts/WorkSans-Bold.ttf");
+}
+
+@font-face {
+    font-family: workSans-regular;
+    src: url("../../fonts/WorkSans-Regular.ttf");
+}
+header .banner-image{
+    height:450px;
+    width: 100%;
+}
+
+main{
+    padding: 0 80px;
+}
+
+h1, h2{
+    margin: 40px auto ;
+    text-align: center;
+    position: relative;
+    width: fit-content;
+}
+h2{
+    font-size: 20px;
+}
+h1::after, h2::after{
+    content: '';
+    width: 25%;
+    height: 3px;
+    background-color: #E24856;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: -8px;
+}
+.row{
+    display: flex;
+    margin-bottom: 10px;
+}
+p{
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* padding-top: 50px; */
+}
+.wrapper .image-wrapper{
+    width: 40%;
+}
+.wrapper .text-wrapper{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 20px;
+    margin:15px;
+}
+.wrapper .text-wrapper h2{
+    margin-top: 0;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.text-wrapper p{
+width:75%
+}
+.wrapper .text-wrapper h2::after{
+    display: none;
+}
+.wrapper .image-wrapper img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.bestseller{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* padding-top: 50px; */
+}
+.bestseller .item{
+    width: 25%;
+}
+.bestseller .item img{
+    width: 85%;
+    margin-top: 7%;
+    margin-bottom: 4%;
+}
+.bestseller .item p{
+    margin: 15px 10px;
+    font-size: 15px;
+    /* min-height: 50px; */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* display: -webkit-box; */
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.btn-wrapper{
+    display: flex;
+    justify-content: center;
+}
+.btn{
+    padding: 10px;
+    border-radius: 0;
+    box-shadow: 0px 3px 6px #00000029;
+    font-size: 15px;
+}
+.buy-now-btn{
+    background-color: rgb(242, 146, 29);
+    border-radius:5px;
+    width:150px;
+    color: white;
+    border: none;
+}
+.add-to-cart-btn{
+    background-color: transparent;
+    /* color: black; */
+    border-color: black;
+}
+
+.testimonials{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-top: 50px;
+}
+.multicol{
+    gap: 20px;
+}
+.testimonials section{
+    width: 50%;
+    box-shadow: 0px 3px 6px #00000029;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 20px;
+}
+.testimonials .avatar{
+    width: 80px;
+    height: 80px;
+    border-radius: 100px;
+    background-color: #F8F1F1;
+    margin: 0 0 30px;
+}
+.testimonials .avatar img{
+    width: 100%;
+}
+.testimonials h3{
+    margin-bottom: 20px;
+}
+
+
+.aboutus-input{
+    border: 1px solid black!important;
+    padding: 15px;
+    margin-bottom: 20px!important;
+    width: 25%;
+}
+#aboutus-button{
+    padding: 12px;
+    margin: auto;
+    background-color: black;
+    color: white;
+    width: 15%;
+}
+#contact-form{
+    display: flex!important;
+    flex-direction: column!important;
+}
+.contact{
+	font: 95% Arial, Helvetica, sans-serif;
+	max-width: 600px;
+	margin: 10px auto;
+	padding: 16px;
+}
+.contact h1{
+	padding: 20px 0;
+	font-size: 140%;
+	font-weight: 300;
+	text-align: center;
+	margin: -16px -16px 16px -16px;
+}
+.form{
+    width: 100%;
+    margin: auto;
+    background-color: #f9f7f7;
+    padding-top: 40px;
+    margin-bottom: 40px;
+}
+.multicol {
+    margin-left: 5%;
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.multicol section {
+    width:100%;
+    text-align: center;
+    background-color: #f9f7f7;
+    padding-bottom:30px;
+}
+#slides img {
+	display: none;
+}
+#slide {
+	display: none;
+    /* margin-top: 2%; */
+    margin: 2%;
+    width: 96%;
+    height:400px;
+}
+
+.ui-widget {
+    font-family: workSans-bold;
+    font-size: 2em;
+}
+
+.ui-accordion .ui-accordion-header {
+    font-family: workSans-regular !important;
+    font-size: 16px;
+    line-height: 30px;
+    margin: 2px 0px 5px 0px !important;
+    border-radius: 10px;
+}
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+    border: 1px solid rgb(242, 146, 29) !important;
+    background: rgb(242, 146, 29) !important;
+    /* background: white !important; */
+    /* border: 1px solid white !important; */
+
+}
+
+#tabs > .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+    background: white !important;
+    border: 1px solid white !important;
+    color:black !important;
+}
+
+
+
+.ui-widget-header > ul > li > a {
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    color: #525252 !important;
+    padding: 13px 10px !important;
+    line-height: 1 !important;
+    letter-spacing: 0 !important;
+    display: block !important;
+    border-top-left-radius: 4px !important;
+    border-top-right-radius: 4px !important;
+    -webkit-transition: all .2s ease-in-out !important;
+    transition: all .2s ease-in-out !important;
+    background: rgba(235,235,235,.8) !important;
+}
+.ui-widget-header > ul {
+    width: 100% !important;
+    display: inline-block !important;
+    vertical-align: bottom !important;
+}
+
+.btn-link{
+    color:black;
+    font-size: 18px;
+    margin-top:20px;
+}
+
+.flight {
+    width: 100%;
+    max-width: 80%;
+    margin: 0 auto 30px auto;
+    padding: 0 15px;
+    /* margin-bottom: 30px; */
+}
+
+#tabs {
+    position: relative;
+    margin-top: -153px;
+    left: 0;
+    right: 0;
+    z-index: 4;
+}
+
+#tabs > ul {
+    /* margin: 0 !important; */
+    list-style-type: none !important;
+    width: 100% !important;
+    /* display: inline-block !important; */
+    vertical-align: bottom !important;
+}
+.icon-image{
+    width:18px;
+    height:18px;
+}
+
+input.left {
+	width: 1em;
+	padding-left: 0;
+}
+
+input.last {
+	margin-bottom: 1em;
+}
+
+.form_input {
+    border: 1px solid black!important;
+    padding: 6px;
+    margin-bottom: 10px!important;
+    width: 526px;
+}
+.form_input_dropdown {
+     border: 1px solid black!important;
+    padding: 6px;
+    margin-bottom: 10px!important;
+    /* width: 540px; */
+}
+label {
+    float: left;
+    /* width: 170px; */
+}
+
+.h1, .h2, .h3, h1, h2, h3 {
+    margin-top: 30px !important;
+    margin-bottom: 30px !important;
+}
+
+  #fadeandscale {
+    -webkit-transform: scale(0.8);
+       -moz-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+            transform: scale(0.8);
+}
+.popup_visible #fadeandscale {
+    -webkit-transform: scale(1);
+       -moz-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
+}
+
+
+/* POPUP */
+img {
+    max-width: 100%;
+}
+.well {
+    /* drop-shadow is better than box-shadow as it add a shadow to tooltip arrows arrow as well,
+    however drop-shadow dramatically affects the performance of transition animation on Android. */
+    /* filter: drop-shadow(0 0 10px rgba(0,0,0,0.3)); */
+    display:none;
+    margin:1em;
+    max-width: 500px;
+    padding-bottom: 25px;
+}
+.well .popup_close {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    border-radius: 2px;
+    background: none;
+    border: 0;
+    font-size: 25px;
+    padding: 0 10px;
+}
+pre.prettyprint {
+    padding: 9px 14px;
+}
+pre {
+  font-size: 12px;
+}
+.fulltable {
+    max-width: 100%;
+    overflow: auto;
+}
+.container {
+    padding-left: 0;
+    padding-right: 0;
+}
+.lineheight {
+    line-height: 3em;
+}
+.pagebottom {
+  border-top:  1px solid #eaeaea;
+  padding: 20px 0;
+  margin-top: 20px;
+}
+.page-header {
+    border-bottom: none;
+}
+.page-header .btn-lg {
+    margin-bottom: 10px;
+}
+
+/**
+ * Styles for the `tooltip` option
+ */
+
+.well--tooltip {
+    min-width: 300px;
+    max-width: 300px;
+    margin: 0;
+}
+
+/* Tooltip Arrow */
+.well--tooltip::before,
+.well--tooltip::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -14px;
+    width: 0;
+    height: 0;
+    border-left: 14px solid transparent;
+    border-right: 14px solid transparent;
+    border-top: 14px solid #cccccc;
+}
+.well--tooltip::after {
+    border-top-color: #f5f5f5;
+    margin-top:  -1px;
+}
+
+.img_popup{
+    width:80%;
+    margin: auto 10%;
+}
+.popup_title{
+    text-align: center;
+    font-weight: 700;
+    margin: 20px 0px;
+}
+#campaign1_detail > p, #campaign2_detail > p, #campaign3_detail > p, #campaign4_detail > p {
+    margin:15px 5%;
+}
+
+#tabs > ul > li > a > span {
+    margin-right: 10px !important;
+}
+
+#banner{
+    height: 300px;
+    background: yellowgreen;
+}
+
+#tab-header > ul {
+    width: 100% !important;
+    display: inline-block !important;
+    vertical-align: bottom !important;
+}
+
+.ui-widget-header {
+    margin-top: -49px !important;
+    background-color: transparent !important;
+    border: none !important;
+}
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor, .ui-tabs .ui-tabs-nav li.ui-state-disabled .ui-tabs-anchor, .ui-tabs .ui-tabs-nav li.ui-tabs-loading .ui-tabs-anchor {
+    background-color: #fff !important;
+    color: black!important;
+    opacity: 1;
+}
+
+.ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+    color: #525252 !important;
+    opacity: 0.7;
+    background: #f3f5f8 !important;
+    border:none !important;
+    height:43px !important;
+    padding-top:13px !important;
+    margin-left: -3px !important;
+    width: 100% !important;
+}
+
+.ui-tabs .ui-tabs-nav {
+    margin-left: 0px !important;
+    padding-left: 0 !important;
+}
+
+#tabs > .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+    background: transparent !important;
+    color: #525252 !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    
+}
+
+#tabs > .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+    border: none !important;
+}
+
+.btn-continue{
+    margin-top: 24px !important;
+}

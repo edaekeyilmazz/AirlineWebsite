@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+
+    <link rel="stylesheet" href="../css/contact/contact.css">
+    <link rel="stylesheet" href="../css/site.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+    <!-- Bootstrap -->
+    <!-- <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+
+    <link rel="stylesheet" href="../jquery-ui-1.12.1.custom/jquery-ui.css">
+</head>
+<body>
+    <nav>
+        <div class="logo-wrapper">
+            <a href="../HomePage/index.html"><img id="logo" src="../banner-logo/airplane_logo.jpg" alt="Logo"></a>
+        </div>
+        <ul>
+            <li><a href="../HomePage/index.html">HOME</a></li>
+            <li><a href="../Contact/contact.html">CONTACT</a></li>
+            <li><a href="../Login/login.html">LOG IN / SIGN UP</a></li>
+        </ul>
+    </nav>
+
+    <header></header>
+
+    <main>
+        <div class="row">
+            <div class="container col-md-5" id="map">
+                <!-- <div class="container pt-3 mb-3"> -->
+            <h1 id="direction" >Get direction <i class="fa fa-location"> <i id="direction_icon" class="fa fa-plus"></i></i></h1>
+            <div class="d-flex justify-content-center  iframe-rwd">
+                <iframe id="map_direction" class="none" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46321.628459816624!2d-80.59472595136721!3d43.479346299999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882bf31d0cec9491%3A0x8bf5f60c306d2207!2sConestoga%20College%20-%20Waterloo!5e0!3m2!1sen!2sca!4v1671070490683!5m2!1sen!2sca"  width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+        <div class="container col-md-6" id="contact-us">
+            <!-- <div class="container p-3 card border-0 shadow"> -->
+            <h1>Contact Us</h1>
+            <form id="contact_form">
+                <p class="text-danger" id="check_message"></p>
+                <div class="form-group mb-3">
+                  <label for="Email">Email</label>
+                  <input type="text" class="form-control" name="email" id="email" placeholder="example@mail.com">
+                </div>
+
+                <div class="form-group mb-3">
+                  <label for="FullName">Full Name</label>
+                  <input type="text" class="form-control" name="full_name" id="full_name" placeholder="Full Name">
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="Contact">Contact</label>
+                    <input type="text" class="form-control" name="contact" id="contact" placeholder="+1 (  ) - ..... - .....">
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" name="text_message" id="text_message" rows="2"></textarea>
+                </div>
+
+                <div class="form-check mb-3">
+                    <input class="form-check-input" type="checkbox" id="check_check" name="check_check" value="something">
+                    <label class="form-check-label col-sm-12">I concent to Travel using my email to contact me!</label>
+                    <p class="text-danger" id="check_message"></p>
+                  </div>
+            </form>
+            <button id="send" class="btn">Send <i class="fa fa-paper-plane"></i></button>
+        </div>
+    </div>
+
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <p>Thank you for contacting us we will get back to you in 3 to 5 business days.</p>
+            </div>
+          
+          </div>
+    </main>
+
+    
+    <footer>
+        <div class="item">
+            <h2>Contact Us</h2>
+            <ul>
+                <li><a href="mailto:info@bepairlines.com">info@bepairlines.com</a></li>
+                <li><a href="tel:+1(548)1112233">+1 (905) 111-2233</a></li>
+            </ul>   
+        </div>
+
+        <p class="copyright">Copyright &copy BEP Airlines</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="../jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+    <script src="../js/contact/contact.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/vast-engineering/jquery-popup-overlay@2/jquery.popupoverlay.min.js"></script>
+</body>
+</html>
